@@ -15,15 +15,6 @@ export default async function Home() {
           className="relative top-0 flex min-h-screen w-full justify-center"
         >
           <div className="container grid grid-cols-2 content-center justify-items-center [&>*]:z-10">
-            {/* <div
-              className="absolute h-[200vh] min-h-screen w-full"
-              style={{
-                backgroundImage: "url('/about-us/bg-1.svg')",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            /> */}
             <Image
               src="/about-us/bg-1.svg"
               alt="About Us"
@@ -111,7 +102,10 @@ export default async function Home() {
 
             <div className="grid grid-cols-3 gap-10">
               {Array.from({ length: 6 }).map((_, i) => (
-                <div className="shadow-custom-shadow flex items-center justify-center rounded-xl p-10 px-20">
+                <div
+                  key={i}
+                  className="shadow-custom-shadow flex items-center justify-center rounded-xl p-10 px-20"
+                >
                   <Image
                     src={`/our-mission/${i + 1}.svg`}
                     alt="Mission"
@@ -123,6 +117,35 @@ export default async function Home() {
               ))}
             </div>
           </div>
+        </section>
+
+        <section
+          id="separator"
+          className="relative top-0 flex h-fit w-full justify-center"
+        >
+          <Image
+            src="/homepage/separator.svg"
+            width={1920}
+            height={1080}
+            className="absolute w-full -rotate-2 scale-110 object-contain"
+            alt="Separator"
+          />
+        </section>
+
+        <section
+          id="our-project"
+          className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
+        >
+          <Image
+            src="/our-project/bg.svg"
+            alt="About Us"
+            width={500}
+            height={500}
+            className="absolute z-20 w-full"
+          />
+          <h1 className="text-5xl font-bold text-white">
+            Our <Accent>Mission</Accent>
+          </h1>
         </section>
       </div>
     </>
