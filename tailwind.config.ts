@@ -9,6 +9,9 @@ export default {
 			backgroundImage: {
 				'custom-gradient': 'linear-gradient(0deg, #04042D 0%, #25256C 26%, #394C7D 60%, #1F1E4C 81%, #262662 100%)',
 			},
+			boxShadow: {
+				'custom-shadow': "10px 10px 5px rgba(0, 0, 0, 0.3), inset -10px 10px 1em rgba(255, 255, 255, 0.2)",
+			},
 			fontFamily: {
 				sans: ["var(--font-geist-sans)", ...fontFamily.sans]
 			},
