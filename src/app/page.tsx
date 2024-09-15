@@ -141,7 +141,7 @@ export default async function Home() {
         </section>
 
         <section
-          id="our-project"
+          id="our-projects"
           className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
         >
           <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
@@ -195,7 +195,7 @@ export default async function Home() {
         </section>
 
         <section
-          id="our-project"
+          id="our-events"
           className="relative top-0 flex h-fit w-full justify-center bg-black/20 py-[200px]"
         >
           <Image
@@ -256,7 +256,7 @@ export default async function Home() {
         </section>
 
         <section
-          id="our-project"
+          id="our-divisions"
           className="relative top-0 flex h-fit w-full justify-center py-[100px]"
         >
           <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
@@ -286,7 +286,7 @@ export default async function Home() {
         </section>
 
         <section
-          id="our-project"
+          id="our-structure"
           className="relative top-0 flex h-fit w-full justify-center py-[100px]"
         >
           <Image
