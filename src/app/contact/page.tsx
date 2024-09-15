@@ -42,9 +42,9 @@ export default function Home() {
         <div className="space-y-4">
           <h2 className="text-sm font-semibold">Follow us</h2>
           <div className="flex items-center justify-center space-x-6">
-            {socialLinks.map((link) => (
+            {socialLinks.map((link, i) => (
               <Link
-                key={link.label}
+                key={i}
                 href={link.href}
                 className="transform transition-all duration-200 hover:scale-110 hover:text-pink-400"
                 aria-label={link.label}
