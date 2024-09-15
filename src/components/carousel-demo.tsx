@@ -37,11 +37,6 @@ export function CarouselDemo() {
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index} className="p-10">
-              {/* <Card className="shadow-custom-shadow border-0 bg-white/5 p-10 backdrop-blur-md">
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card> */}
               <div className="shadow-custom-shadow border-muted-foreground/30 rounded-xl border p-10">
                 <div className="relative">
                   <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#f3f4ed] to-[#5926b7] opacity-75 blur" />
