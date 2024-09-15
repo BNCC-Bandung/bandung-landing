@@ -152,7 +152,7 @@ export default async function Home() {
               {Array.from({ length: 6 }).map((_, i) => (
                 <div
                   key={i}
-                  className="relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg"
+                  className="shadow-custom-shadow relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg"
                 >
                   <div className="relative">
                     <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#65E0E9] to-[#3E47BE] opacity-75 blur" />
@@ -206,7 +206,7 @@ export default async function Home() {
               {Array.from({ length: 3 }).map((_, i) => (
                 <div
                   key={i}
-                  className="relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg"
+                  className="shadow-custom-shadow relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg"
                 >
                   <div className="relative">
                     <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#65E0E9] to-[#3E47BE] opacity-75 blur" />
@@ -252,6 +252,36 @@ export default async function Home() {
               height={500}
               className="absolute top-[-400px] z-0 w-full"
             />
+          </div>
+        </section>
+
+        <section
+          id="our-project"
+          className="relative top-0 flex h-fit w-full justify-center py-[100px]"
+        >
+          <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
+            <h1 className="text-5xl font-bold text-white">
+              Our <Accent>Divisions</Accent>
+            </h1>
+
+            <div className="flex items-center justify-center gap-20 py-10">
+              {Array.from({ length: 5 }).map((_, i) => {
+                const div_name = ["PR", "EEO", "LnT", "RnD", "HrD"];
+
+                return (
+                  <div key={i} className="flex flex-col items-center">
+                    <Image
+                      src={`/our-divisions/${i + 1}.svg`}
+                      alt="Division"
+                      width={200}
+                      height={200}
+                      className="size-[80px]"
+                    />
+                    <h2 className="text-2xl font-bold">{div_name[i]}</h2>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
       </div>
