@@ -14,7 +14,7 @@ export default async function Home({ params }: { params: { id: string } }) {
   const division = DivisionData.get(params.id as DivisionKeys);
 
   return (
-    <div className="bg-custom-gradient relative z-10 flex min-h-screen w-full flex-col overflow-hidden">
+    <div className="bg-custom-gradient relative z-10 flex min-h-screen w-full flex-col overflow-hidden pb-[100px]">
       <Image
         src="/divisions/bg.svg"
         alt="About Us"
@@ -47,11 +47,13 @@ export default async function Home({ params }: { params: { id: string } }) {
             <p className="text-xl font-light">{division.description}</p>
 
             <div className="flex gap-5">
-              <GlowingButton className="text-md p-6">Creativity</GlowingButton>
-              <GlowingButton className="text-md p-6">
+              <GlowingButton disabled className="text-md p-6">
+                Creativity
+              </GlowingButton>
+              <GlowingButton disabled className="text-md p-6">
                 Communication
               </GlowingButton>
-              <GlowingButton className="text-md p-6">
+              <GlowingButton disabled className="text-md p-6">
                 Social Media
               </GlowingButton>
             </div>
@@ -103,7 +105,7 @@ export default async function Home({ params }: { params: { id: string } }) {
 
       <section
         id="our-events"
-        className="relative top-0 flex h-fit w-full justify-center py-[200px]"
+        className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
       >
         <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
           <h1 className="text-5xl font-bold text-white">

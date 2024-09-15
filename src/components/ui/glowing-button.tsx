@@ -15,8 +15,9 @@ export function GlowingButton({
 }) {
   const classes = cn(
     "group relative inline-flex w-fit ${className}",
-    "text-foreground w-full rounded-2xl bg-gradient-to-r from-[#65E0E9] to-[#A269FF] p-6 py-7 text-xl font-bold",
+    "text-foreground w-full rounded-2xl z-20 bg-gradient-to-r from-[#65E0E9] to-[#A269FF] p-6 py-7 text-xl font-bold",
     className,
+    disabled && "cursor-default",
   );
   return (
     <div className="group relative inline-flex w-fit">

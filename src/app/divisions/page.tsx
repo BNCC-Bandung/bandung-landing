@@ -49,11 +49,11 @@ export function DivisionSelection() {
             const div_name = ["PR", "EEO", "LnT", "RnD", "HrD"];
 
             return (
-              <Link href={`/divisions/${div_name[i]?.toLocaleLowerCase()}`}>
-                <div
-                  key={i}
-                  className="shadow-custom-shadow flex cursor-pointer flex-col items-center rounded-2xl bg-white/15 p-10 backdrop-blur-lg transition-transform hover:scale-[1.03] active:scale-[0.97]"
-                >
+              <Link
+                key={i}
+                href={`/divisions/${div_name[i]?.toLocaleLowerCase()}`}
+              >
+                <div className="shadow-custom-shadow flex cursor-pointer flex-col items-center rounded-2xl bg-white/15 p-10 backdrop-blur-lg transition-transform hover:scale-[1.03] active:scale-[0.97]">
                   <Image
                     src={`/our-divisions/${i + 1}.svg`}
                     alt="Division"
