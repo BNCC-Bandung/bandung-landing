@@ -1,4 +1,5 @@
 import { Accent } from "@/components/accent";
+import { OurStructure } from "@/components/homepage/our-structure";
 import { ParallaxHomepage } from "@/components/parallax-homepage";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -9,7 +10,7 @@ export default async function Home() {
     <>
       <ParallaxHomepage />
 
-      <div className="bg-custom-gradient h-[600vh] space-y-28">
+      <div className="bg-custom-gradient h-fit space-y-28 overflow-hidden">
         <section
           id="about"
           className="relative top-0 flex min-h-screen w-full justify-center"
@@ -197,6 +198,13 @@ export default async function Home() {
           id="our-project"
           className="relative top-0 flex h-fit w-full justify-center bg-black/20 py-[200px]"
         >
+          <Image
+            src="/our-events/bg.svg"
+            alt="About Us"
+            width={500}
+            height={500}
+            className="absolute top-[-400px] z-0 w-full"
+          />
           <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
             <h1 className="text-5xl font-bold text-white">
               Our <Accent>Events</Accent>
@@ -244,14 +252,6 @@ export default async function Home() {
               </Link>
               <div className="animate-tilt absolute inset-0 rounded-xl bg-gradient-to-r from-[#65E0E9] to-[#A269FF] opacity-70 blur-lg transition-all duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200" />
             </div>
-
-            <Image
-              src="/our-events/bg.svg"
-              alt="About Us"
-              width={500}
-              height={500}
-              className="absolute top-[-400px] z-0 w-full"
-            />
           </div>
         </section>
 
@@ -282,6 +282,26 @@ export default async function Home() {
                 );
               })}
             </div>
+          </div>
+        </section>
+
+        <section
+          id="our-project"
+          className="relative top-0 flex h-fit w-full justify-center py-[100px]"
+        >
+          <Image
+            src="/our-structure/bg.svg"
+            alt="About Us"
+            width={500}
+            height={500}
+            className="absolute top-[-200px] z-0 w-full"
+          />
+          <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
+            <h1 className="text-5xl font-bold text-white">
+              Our <Accent>Structure</Accent>
+            </h1>
+
+            <OurStructure />
           </div>
         </section>
       </div>

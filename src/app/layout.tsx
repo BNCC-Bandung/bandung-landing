@@ -10,6 +10,7 @@ const fonts = Montserrat({
 import { TRPCReactProvider } from "@/trpc/react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavBar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -32,6 +33,7 @@ export default function RootLayout({
           >
             <NavBar />
             {children}
+            <Footer />
           </ThemeProvider>
         </TRPCReactProvider>
       </body>

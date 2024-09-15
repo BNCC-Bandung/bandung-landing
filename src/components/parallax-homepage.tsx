@@ -16,7 +16,7 @@ export function ParallaxHomepage() {
   const scroll = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.1,
+    restDelta: 0.01,
   });
 
   const EASE_FACTOR = 0.6;
@@ -78,15 +78,6 @@ export function ParallaxHomepage() {
         </motion.div>
       </div>
 
-      {/* <motion.div
-        className="h-fit-content static"
-        style={{
-          backgroundImage: "url('/homepage/rounded.svg')",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "bottom",
-        }}
-      /> */}
       <div className="relative z-40 -mt-[80px]">
         <Image
           src="/homepage/rounded.svg"
@@ -110,7 +101,7 @@ export function ParallaxHomepage() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
           className="text-center"
         >
           <Title className="text-foreground text-center text-6xl leading-[1.4]">
@@ -122,9 +113,15 @@ export function ParallaxHomepage() {
       </div>
 
       <div className="sticky top-0 flex h-screen items-center justify-center bg-[#0B041C]">
-        <Title>
-          <Accent className="text-8xl">About Us</Accent>
-        </Title>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <Title>
+            <Accent className="text-8xl">About Us</Accent>
+          </Title>
+        </motion.div>
       </div>
     </div>
   );
