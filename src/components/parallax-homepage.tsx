@@ -21,13 +21,9 @@ export function ParallaxHomepage() {
 
   const EASE_FACTOR = 0.6;
 
-  const backgroundScale = useTransform(
-    scroll,
-    [0, EASE_FACTOR / 2],
-    [1.05, 1.5],
-  );
+  const backgroundScale = useTransform(scroll, [0, EASE_FACTOR], [1.05, 1.5]);
   const islandScale = useTransform(scroll, [0, EASE_FACTOR], ["150%", "100%"]);
-  const moonScale = useTransform(scroll, [0, EASE_FACTOR], ["100%", "0%"]);
+  const moonScale = useTransform(scroll, [0, EASE_FACTOR / 2], ["100%", "0%"]);
   const moonPosition = useTransform(
     scroll,
     [0, EASE_FACTOR],
