@@ -4,6 +4,7 @@ import { ParallaxHomepage } from "@/components/parallax-homepage";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { DivisionData } from "./divisions/[id]/data";
 
 export default async function Home() {
   return (
@@ -305,7 +306,7 @@ export default async function Home() {
               Our <Accent>Structure</Accent>
             </h1>
 
-            <OurStructure />
+            <OurStructure gridItems={DivisionData.getStructure()} />
           </div>
         </section>
       </div>

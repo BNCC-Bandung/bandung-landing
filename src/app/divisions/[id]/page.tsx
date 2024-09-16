@@ -87,19 +87,19 @@ export default async function Home({ params }: { params: { id: string } }) {
         id="our-structure"
         className="relative top-0 flex h-fit w-full justify-center py-[100px]"
       >
-        <Image
+        {/* <Image
           src="/our-structure/bg.svg"
           alt="About Us"
           width={500}
           height={500}
           className="absolute top-[-200px] z-0 w-full"
-        />
+        /> */}
         <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
           <h1 className="text-5xl font-bold text-white">
             Our <Accent>Structure</Accent>
           </h1>
 
-          <OurStructure />
+          <OurStructure gridItems={division.structure} />
         </div>
       </section>
 

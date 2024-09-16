@@ -3,6 +3,7 @@ import { OurStructure } from "@/components/homepage/our-structure";
 
 import Image from "next/image";
 import Link from "next/link";
+import { DivisionData } from "./[id]/data";
 
 export default async function Home() {
   return (
@@ -26,7 +27,7 @@ export default async function Home() {
             See Our <Accent>Structure</Accent>
           </h1>
 
-          <OurStructure />
+          <OurStructure gridItems={DivisionData.getStructure()} />
         </div>
       </section>
     </div>

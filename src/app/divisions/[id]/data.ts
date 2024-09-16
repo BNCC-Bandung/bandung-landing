@@ -1,5 +1,7 @@
+import { Divisions, StructureProps } from "@/types/grid";
+
 export class DivisionData {
-    static divisions = {
+    static divisions: Divisions = {
         pr: {
             image: "/our-divisions/1.svg",
             title: "Public Relations",
@@ -28,6 +30,40 @@ export class DivisionData {
                     description: "New event description for Public Relations Event 3.",
                 }
             ],
+            structure: [
+                {
+                    id: 1,
+                    name: "Natasya Felicia",
+                    position: "PR Manager",
+                    alt: "Natasya Felicia - PR Manager",
+                    imageSrc: "/our-structure/pr.png",
+                    className: "col-start-3 row-start-1"
+                },
+                {
+                    id: 2,
+                    name: "Puput Novita Indraini",
+                    position: "PR Staff",
+                    alt: "Puput Novita Indraini - PR Staff",
+                    imageSrc: "/our-structure/pr-1.png",
+                    className: "col-start-2 row-start-2"
+                },
+                {
+                    id: 3,
+                    name: "Callista Althea Hartanto",
+                    position: "PR Staff",
+                    alt: "Callista Althea Hartanto - PR Staff",
+                    imageSrc: "/our-structure/pr-2.png",
+                    className: "col-start-3 row-start-2"
+                },
+                {
+                    id: 4,
+                    name: "Tannia Aurelle",
+                    position: "PR Staff",
+                    alt: "Tannia Aurelle - PR Staff",
+                    imageSrc: "/our-structure/pr-3.png",
+                    className: "col-start-4 row-start-2"
+                },
+            ]
         },
         eeo: {
             image: "/our-divisions/2.svg",
@@ -57,6 +93,40 @@ export class DivisionData {
                     description: "New event description for External Event Organizer Event C.",
                 }
             ],
+            structure: [
+                {
+                    id: 1,
+                    name: "Cynthia Shabrina",
+                    position: "EEO Manager",
+                    alt: "Cynthia Shabrina - EEO Manager",
+                    imageSrc: "/our-structure/eeo.png",
+                    className: "col-start-3 row-start-1"
+                },
+                {
+                    id: 2,
+                    name: "Florenze Albertine Tatuwey",
+                    position: "EEO Staff",
+                    alt: "Florenze Albertine Tatuwey - EEO Staff",
+                    imageSrc: "/our-structure/eeo-1.png",
+                    className: "col-start-2 row-start-2"
+                },
+                {
+                    id: 3,
+                    name: "Florenze Albertine Tatuwey",
+                    position: "EEO Staff",
+                    alt: "Florenze Albertine Tatuwey - EEO Staff",
+                    imageSrc: "/our-structure/eeo-2.png",
+                    className: "col-start-3 row-start-2"
+                },
+                {
+                    id: 4,
+                    name: "Sharon Faye Nathaly",
+                    position: "EEO Staff",
+                    alt: "Sharon Faye Nathaly - EEO Staff",
+                    imageSrc: "/our-structure/eeo-3.png",
+                    className: "col-start-4 row-start-2"
+                },
+            ]
         },
         lnt: {
             image: "/our-divisions/3.svg",
@@ -86,6 +156,56 @@ export class DivisionData {
                     description: "New event description for Learning and Training Event C.",
                 }
             ],
+            structure: [
+                {
+                    id: 1,
+                    name: "Maleo Farrel",
+                    position: "Lnt Manager",
+                    alt: "Maleo Farrel - Lnt Manager",
+                    imageSrc: "/our-structure/lnt.png",
+                    className: "col-start-3 row-start-1"
+                },
+                {
+                    id: 2,
+                    name: "William Susanto Lukman",
+                    position: "Lnt Staff",
+                    alt: "William Susanto Lukman - Lnt Staff",
+                    imageSrc: "/our-structure/lnt-1.png",
+                    className: "col-start-1 row-start-2"
+                },
+                {
+                    id: 3,
+                    name: "Richard Arthur Sugihanjoyo",
+                    position: "Lnt Staff",
+                    alt: "Richard Arthur Sugihanjoyo - Lnt Staff",
+                    imageSrc: "/our-structure/lnt-2.png",
+                    className: "col-start-2 row-start-2"
+                },
+                {
+                    id: 4,
+                    name: "Samuel Benediktus Meliala",
+                    position: "Lnt Staff",
+                    alt: "Samuel Benediktus Meliala - Lnt Staff",
+                    imageSrc: "/our-structure/lnt-3.png",
+                    className: "col-start-3 row-start-2"
+                },
+                {
+                    id: 5,
+                    name: "Ezra Arya Wijaya",
+                    position: "Lnt Staff",
+                    alt: "Ezra Arya Wijaya - Lnt Staff",
+                    imageSrc: "/our-structure/lnt-4.png",
+                    className: "col-start-4 row-start-2"
+                },
+                {
+                    id: 6,
+                    name: "Gregorius Cahyadi",
+                    position: "Lnt Staff",
+                    alt: "Gregorius Cahyadi - Lnt Staff",
+                    imageSrc: "/our-structure/lnt-5.png",
+                    className: "col-start-5 row-start-2"
+                },
+            ]
         },
         rnd: {
             image: "/our-divisions/4.svg",
@@ -115,6 +235,56 @@ export class DivisionData {
                     description: "New event description for Research and Development Event C.",
                 }
             ],
+            structure: [
+                {
+                    id: 1,
+                    name: "Reynard Hansel",
+                    position: "RnD Manager",
+                    alt: "Reynard Hansel - RnD Manager",
+                    imageSrc: "/our-structure/rnd.png",
+                    className: "col-start-3 row-start-1"
+                },
+                {
+                    id: 2,
+                    name: "Ihsaan Hardyanto",
+                    position: "RnD Staff",
+                    alt: "Ihsaan Hardyanto - RnD Staff",
+                    imageSrc: "/our-structure/rnd-1.png",
+                    className: "col-start-1 row-start-2"
+                },
+                {
+                    id: 3,
+                    name: "Reynaldy Marchell Bagas Adji",
+                    position: "RnD Staff",
+                    alt: "Reynaldy Marchell Bagas Adji - RnD Staff",
+                    imageSrc: "/our-structure/rnd-2.png",
+                    className: "col-start-2 row-start-2"
+                },
+                {
+                    id: 4,
+                    name: "Reynaldo Marchell Bagas Adji",
+                    position: "RnD Staff",
+                    alt: "Reynaldo Marchell Bagas Adji - RnD Staff",
+                    imageSrc: "/our-structure/rnd-3.png",
+                    className: "col-start-3 row-start-2"
+                },
+                {
+                    id: 5,
+                    name: "Rakha Naufal Azizi",
+                    position: "RnD Staff",
+                    alt: "Rakha Naufal Azizi - RnD Staff",
+                    imageSrc: "/our-structure/rnd-4.png",
+                    className: "col-start-4 row-start-2"
+                },
+                {
+                    id: 6,
+                    name: "Stanislaus Kanaya Jerry Febriano",
+                    position: "RnD Staff",
+                    alt: "Stanislaus Kanaya Jerry Febriano - RnD Staff",
+                    imageSrc: "/our-structure/rnd-5.png",
+                    className: "col-start-5 row-start-2"
+                },
+            ]
         },
         hrd: {
             image: "/our-divisions/5.svg",
@@ -144,8 +314,87 @@ export class DivisionData {
                     description: "New event description for Human Resources Development Event C.",
                 }
             ],
+            structure: [
+                {
+                    id: 1,
+                    name: "Rafael Marvin Sowarahardja",
+                    position: "HRD Manager",
+                    alt: "Rafael Marvin Sowarahardja - HRD Manager",
+                    imageSrc: "/our-structure/hrd.png",
+                    className: "col-start-3 row-start-1"
+                },
+                {
+                    id: 2,
+                    name: "Vanessa Audreylia",
+                    position: "HRD Staff",
+                    alt: "Vanessa Audreylia - HRD Staff",
+                    imageSrc: "/our-structure/hrd-1.png",
+                    className: "col-start-3 row-start-2"
+                },
+            ]
         },
     };
+
+    static getStructure() {
+        return [
+            {
+                id: 1,
+                imageSrc: "/our-structure/ceo.png",
+                alt: "Mission",
+                className: "col-start-3 row-start-1 ",
+                name: "Theofilus Adhi Septian",
+                position: "Chief Executive Officer",
+            },
+            {
+                id: 2,
+                imageSrc: "/our-structure/cfo.png",
+                alt: "Mission",
+                className: "col-start-4 row-start-2",
+                name: "Richard Rafelson",
+                position: "Chief Financial Officer",
+            },
+            {
+                id: 3,
+                imageSrc: "/our-structure/pr.png",
+                alt: "Mission",
+                className: "col-start-1 row-start-3",
+                name: "Natasya Felicia",
+                position: "PR Manager",
+            },
+            {
+                id: 4,
+                imageSrc: "/our-structure/eeo.png",
+                alt: "Mission",
+                className: "col-start-2 row-start-3",
+                name: "Cynthia Shabrina",
+                position: "EEO Manager",
+            },
+            {
+                id: 5,
+                imageSrc: "/our-structure/lnt.png",
+                alt: "Mission",
+                className: "col-start-3 row-start-3",
+                name: "Maleo Farrel",
+                position: "LnT Manager",
+            },
+            {
+                id: 6,
+                imageSrc: "/our-structure/rnd.png",
+                alt: "Mission",
+                className: "col-start-4 row-start-3",
+                name: "Reynard Hansel",
+                position: "RnD Manager",
+            },
+            {
+                id: 7,
+                imageSrc: "/our-structure/hrd.png",
+                alt: "Mission",
+                className: "col-start-5 row-start-3",
+                name: "Rafael Marvin Sowarahardja",
+                position: "HRD Manager",
+            },
+        ] satisfies StructureProps[];
+    }
 
     static get(id: keyof typeof this.divisions) {
         return this.divisions[id] || null;
