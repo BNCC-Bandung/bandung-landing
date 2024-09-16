@@ -60,7 +60,7 @@ export default async function Home({ params }: { params: { id: string } }) {
           </div>
 
           <div className="relative w-[500px]">
-            <div className="shadow-custom-shadow absolute bottom-[30%] right-10 w-full rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
+            <div className="shadow-custom-shadow absolute bottom-[40%] right-10 w-full rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
               <Image
                 src={division.card_image[0] || "/divisions/pr/hero-1.png"}
                 alt="About Us"
@@ -70,7 +70,7 @@ export default async function Home({ params }: { params: { id: string } }) {
               />
             </div>
 
-            <div className="shadow-custom-shadow absolute left-10 top-[50%] w-full -rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
+            <div className="shadow-custom-shadow absolute left-24 top-[50%] w-full -rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
               <Image
                 src={division.card_image[1] || "/divisions/pr/hero-2.png"}
                 alt="About Us"

@@ -31,12 +31,13 @@ export default function Home() {
         </p>
 
         <div className="mb-12 space-y-4">
-          <a
+          <Link
             href="mailto:bnccbandung.general@gmail.com"
+            target="_blank"
             className="block text-lg font-medium transition-colors hover:underline sm:text-xl"
           >
             <Accent>bnccbandung.general@gmail.com</Accent>
-          </a>
+          </Link>
         </div>
 
         <div className="space-y-4">

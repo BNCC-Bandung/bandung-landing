@@ -54,21 +54,25 @@ export default async function Home() {
             </div>
 
             <div className="relative w-[500px]">
-              <Image
-                src="/about-us/image-1.png"
-                alt="About Us"
-                width={500}
-                height={300}
-                className="absolute bottom-[40%] right-10 z-20 -rotate-3 rounded-xl bg-white/10 p-3 drop-shadow-lg backdrop-blur-lg"
-              />
+              <div className="shadow-custom-shadow absolute bottom-[30%] right-10 w-full -rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
+                <Image
+                  src="/about-us/image-1.png"
+                  alt="About Us"
+                  width={500}
+                  height={300}
+                  className="aspect-video rounded-xl bg-white/10 object-cover"
+                />
+              </div>
 
-              <Image
-                src="/about-us/image-2.png"
-                alt="About Us"
-                width={500}
-                height={300}
-                className="absolute left-10 top-[60%] rotate-3 rounded-xl bg-white/10 p-3 drop-shadow-lg backdrop-blur-lg"
-              />
+              <div className="shadow-custom-shadow absolute left-24 top-[70%] w-full rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
+                <Image
+                  src="/about-us/image-2.png"
+                  alt="About Us"
+                  width={500}
+                  height={300}
+                  className="aspect-video rounded-xl bg-white/10 object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
