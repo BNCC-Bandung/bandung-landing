@@ -24,7 +24,7 @@ export function GlowingButton({
       {disabled ? (
         <Button className={classes}>{children}</Button>
       ) : (
-        <Link className="z-20 w-full" href={href || "#"}>
+        <Link className="z-20 w-full" href={href ?? "#"}>
           <Button className={classes}>{children}</Button>
         </Link>
       )}

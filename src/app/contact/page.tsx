@@ -13,6 +13,7 @@ export default function Home() {
     { icon: SiLinkedin, href: "#", label: "LinkedIn" },
     { icon: SiFacebook, href: "#", label: "Facebook" },
   ];
+
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-[#0B041C]">
       <motion.div
@@ -26,8 +27,8 @@ export default function Home() {
         </Title>
 
         <p className="my-12 text-xl font-light leading-relaxed sm:text-lg">
-          We'd love to hear from you. <br />
-          Let's create something amazing together.
+          We&apos;d love to hear from you. <br />
+          Let&apos;s create something amazing together.
         </p>
 
         <div className="mb-12 space-y-4">

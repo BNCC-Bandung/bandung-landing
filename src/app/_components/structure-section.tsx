@@ -1,5 +1,5 @@
 import { Accent } from "@/components/accent";
-import { OurStructure } from "@/components/homepage/our-structure";
+import { OurStructure } from "@/components/our-structure";
 import { SectionTitle } from "@/components/section-title";
 import Image from "next/image";
 import { DivisionData } from "../divisions/[id]/data";

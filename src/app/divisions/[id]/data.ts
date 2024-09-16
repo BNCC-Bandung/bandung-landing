@@ -1,4 +1,4 @@
-import { Divisions, StructureProps } from "@/types/grid";
+import type { Divisions, StructureProps } from "@/types/grid";
 
 export class DivisionData {
     static divisions: Divisions = {

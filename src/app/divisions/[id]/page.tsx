@@ -1,9 +1,9 @@
 import { Accent } from "@/components/accent";
 import { GlowingButton } from "@/components/ui/glowing-button";
-import { DivisionData, DivisionKeys } from "./data";
+import { DivisionData, type DivisionKeys } from "./data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { OurStructure } from "@/components/homepage/our-structure";
+import { OurStructure } from "@/components/our-structure";
 import { DivisionSelection } from "../page";
 
 export default async function Home({ params }: { params: { id: string } }) {
@@ -62,7 +62,7 @@ export default async function Home({ params }: { params: { id: string } }) {
           <div className="relative w-[500px]">
             <div className="shadow-custom-shadow absolute bottom-[40%] right-10 w-full rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
               <Image
-                src={division.card_image[0] || "/divisions/pr/hero-1.png"}
+                src={division.card_image[0] ?? "/divisions/pr/hero-1.png"}
                 alt="About Us"
                 width={500}
                 height={300}
@@ -72,7 +72,7 @@ export default async function Home({ params }: { params: { id: string } }) {
 
             <div className="shadow-custom-shadow absolute left-24 top-[50%] w-full -rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
               <Image
-                src={division.card_image[1] || "/divisions/pr/hero-2.png"}
+                src={division.card_image[1] ?? "/divisions/pr/hero-2.png"}
                 alt="About Us"
                 width={500}
                 height={300}

@@ -1,5 +1,5 @@
 import { Accent } from "@/components/accent";
-import { OurStructure } from "@/components/homepage/our-structure";
+import { OurStructure } from "@/components/our-structure";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +34,7 @@ export default async function Home() {
   );
 }
 
-export function DivisionSelection() {
+export function DivisionSelection({ text = "See Our" }: { text?: string }) {
   return (
     <section
       id="our-divisions"
@@ -42,7 +42,7 @@ export function DivisionSelection() {
     >
       <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
         <h1 className="text-5xl font-bold text-white">
-          See Our <Accent>Divisions</Accent>
+          {text} <Accent>Divisions</Accent>
         </h1>
 
         <div className="flex items-center justify-center gap-20 py-10">
