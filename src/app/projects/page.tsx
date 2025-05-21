@@ -1,13 +1,31 @@
+"use client";
 import { Accent } from "@/components/accent";
 import { CarouselDemo } from "@/components/carousel-demo";
 import { ProjectCard } from "@/components/project-card";
 import { GlowingButton } from "@/components/ui/glowing-button";
 import { SearchIcon } from "lucide-react";
 import Image from "next/image";
+import projectsJSON from "../../../public/our-project/dummy_data/projects.json";
+import { useState } from "react";
 
-export default async function Home() {
+export default function Home() {
+  const [projects, setProjects] = useState(projectsJSON);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const filteredProjects = projects.filter(
+    (project) =>
+      project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.year.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.category.toLowerCase().includes(searchQuery.toLowerCase()),
+  );
+
+  const handleViewMore = () => {
+    setVisibleCount(() => filteredProjects.length);
+  };
   return (
-    <div className="bg-custom-gradient relative z-10 flex min-h-screen w-full flex-col overflow-hidden">
+    <div className="relative z-10 flex min-h-screen w-full flex-col overflow-hidden bg-custom-gradient">
       <Image
         src="/projects/bg.svg"
         alt="About Us"
@@ -40,9 +58,15 @@ export default async function Home() {
 
           {/* This is the part that you need to replace */}
           <div className="flex w-full flex-col items-center justify-center gap-10 py-10">
-            <div className="shadow-custom-shadow flex w-2/3 items-center gap-5 rounded-xl bg-white/5 p-4 backdrop-blur-lg">
+            <div className="flex w-2/3 items-center gap-5 rounded-xl bg-white/5 p-4 shadow-custom-shadow backdrop-blur-lg">
               <SearchIcon />
-              <span className="text-white">Search Projects</span>
+              <input
+                type="text"
+                placeholder="Search Projects..."
+                className="w-full bg-transparent text-white outline-none"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
             </div>
             <div className="flex w-2/3 items-center justify-between gap-5">
               <span>All</span>
@@ -55,18 +79,28 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-3 gap-10">
-            {Array.from({ length: 9 }).map((_, i) => (
+            {filteredProjects.slice(0, visibleCount).map((project, i) => (
               <ProjectCard
-                key={i}
+                key={project.id}
                 imageIndex={i + 1}
-                title="Project Name"
-                year="2021"
-                description="Lorem ipsum dolor sit amet consectetur. At enim mauris commodo ultricies. Erat sagittis semper dignissim tortor tellus amet ante habitant."
+                title={project.title}
+                year={project.year}
+                description={
+                  project.description.split(" ").slice(0, 20).join(" ") +
+                  (project.description.split(" ").length > 20 ? "..." : "")
+                }
               />
             ))}
           </div>
-
-          <GlowingButton href="/projects">View All Projects</GlowingButton>
+          {visibleCount < filteredProjects.length && (
+            <GlowingButton
+              disabled
+              className="text-md p-6"
+              onClick={handleViewMore}
+            >
+              View All Projects
+            </GlowingButton>
+          )}
         </div>
       </section>
     </div>
