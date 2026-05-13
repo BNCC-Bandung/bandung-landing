@@ -44,7 +44,9 @@ export default async function Home({ params }: { params: { id: string } }) {
               </h1>
             </div>
 
-            <p className="text-xl font-light">{division.description}</p>
+            <p className="font-sans text-xl font-light text-white/90">
+              {division.description}
+            </p>
 
             <div className="flex gap-5">
               <GlowingButton disabled className="text-md p-6">
@@ -116,7 +118,7 @@ export default async function Home({ params }: { params: { id: string } }) {
             {division.events.map((event, i) => (
               <div
                 key={i}
-                className="shadow-custom-shadow relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg"
+                className="shadow-custom-shadow relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 font-sans text-white backdrop-blur-lg"
               >
                 <div className="relative">
                   <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#65E0E9] to-[#3E47BE] opacity-75 blur" />

@@ -54,7 +54,7 @@ export function DivisionSelection({ text = "See Our" }: { text?: string }) {
                 key={i}
                 href={`/divisions/${div_name[i]?.toLocaleLowerCase()}`}
               >
-                <div className="shadow-custom-shadow flex cursor-pointer flex-col items-center rounded-2xl bg-white/15 p-10 backdrop-blur-lg transition-transform hover:scale-[1.03] active:scale-[0.97]">
+                <div className="shadow-custom-shadow flex cursor-pointer flex-col items-center rounded-2xl bg-white/15 p-10 font-sans text-white backdrop-blur-lg transition-transform hover:scale-[1.03] active:scale-[0.97]">
                   <Image
                     src={`/our-divisions/${i + 1}.svg`}
                     alt="Division"

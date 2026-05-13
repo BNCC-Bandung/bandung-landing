@@ -13,7 +13,7 @@ export default {
 				'custom-shadow': "10px 10px 5px rgba(0, 0, 0, 0.3), inset -10px 10px 1em rgba(255, 255, 255, 0.2)",
 			},
 			fontFamily: {
-				sans: ["var(--font-geist-sans)", ...fontFamily.sans]
+				sans: ["var(--font-inter)", ...fontFamily.sans]
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

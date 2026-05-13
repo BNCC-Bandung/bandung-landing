@@ -36,7 +36,7 @@ export class DivisionData {
                     name: "Natasya Felicia",
                     position: "PR Manager",
                     alt: "Natasya Felicia - PR Manager",
-                    imageSrc: "/our-structure/pr.png",
+                    imageSrc: "/our-structure/pr.jpg",
                     className: "col-start-3 row-start-1"
                 },
                 {
@@ -44,24 +44,32 @@ export class DivisionData {
                     name: "Puput Novita Indraini",
                     position: "PR Staff",
                     alt: "Puput Novita Indraini - PR Staff",
-                    imageSrc: "/our-structure/pr-1.png",
-                    className: "col-start-2 row-start-2"
+                    imageSrc: "/our-structure/pr-1.jpg",
+                    className: "col-start-1 row-start-2"
                 },
                 {
                     id: 3,
                     name: "Callista Althea Hartanto",
                     position: "PR Staff",
                     alt: "Callista Althea Hartanto - PR Staff",
-                    imageSrc: "/our-structure/pr-2.png",
-                    className: "col-start-3 row-start-2"
+                    imageSrc: "/our-structure/pr-2.jpg",
+                    className: "col-start-2 row-start-2"
                 },
                 {
                     id: 4,
                     name: "Tannia Aurelle",
                     position: "PR Staff",
                     alt: "Tannia Aurelle - PR Staff",
-                    imageSrc: "/our-structure/pr-3.png",
+                    imageSrc: "/our-structure/pr-3.jpg",
                     className: "col-start-4 row-start-2"
+                },
+                {
+                    id: 5,
+                    name: "PR Staff 4",
+                    position: "PR Staff",
+                    alt: "PR Staff 4 - PR Staff",
+                    imageSrc: "/our-structure/pr-4.jpg",
+                    className: "col-start-5 row-start-2"
                 },
             ]
         },
@@ -99,7 +107,7 @@ export class DivisionData {
                     name: "Cynthia Shabrina",
                     position: "EEO Manager",
                     alt: "Cynthia Shabrina - EEO Manager",
-                    imageSrc: "/our-structure/eeo.png",
+                    imageSrc: "/our-structure/eeo.jpg",
                     className: "col-start-3 row-start-1"
                 },
                 {
@@ -107,24 +115,8 @@ export class DivisionData {
                     name: "Florenze Albertine Tatuwey",
                     position: "EEO Staff",
                     alt: "Florenze Albertine Tatuwey - EEO Staff",
-                    imageSrc: "/our-structure/eeo-1.png",
-                    className: "col-start-2 row-start-2"
-                },
-                {
-                    id: 3,
-                    name: "Florenze Albertine Tatuwey",
-                    position: "EEO Staff",
-                    alt: "Florenze Albertine Tatuwey - EEO Staff",
-                    imageSrc: "/our-structure/eeo-2.png",
+                    imageSrc: "/our-structure/eeo-1.jpg",
                     className: "col-start-3 row-start-2"
-                },
-                {
-                    id: 4,
-                    name: "Sharon Faye Nathaly",
-                    position: "EEO Staff",
-                    alt: "Sharon Faye Nathaly - EEO Staff",
-                    imageSrc: "/our-structure/eeo-3.png",
-                    className: "col-start-4 row-start-2"
                 },
             ]
         },
@@ -162,7 +154,7 @@ export class DivisionData {
                     name: "Maleo Farrel",
                     position: "Lnt Manager",
                     alt: "Maleo Farrel - Lnt Manager",
-                    imageSrc: "/our-structure/lnt.png",
+                    imageSrc: "/our-structure/lnt.jpg",
                     className: "col-start-3 row-start-1"
                 },
                 {
@@ -170,40 +162,24 @@ export class DivisionData {
                     name: "William Susanto Lukman",
                     position: "Lnt Staff",
                     alt: "William Susanto Lukman - Lnt Staff",
-                    imageSrc: "/our-structure/lnt-1.png",
-                    className: "col-start-1 row-start-2"
+                    imageSrc: "/our-structure/lnt-1.jpg",
+                    className: "col-start-2 row-start-2"
                 },
                 {
                     id: 3,
                     name: "Richard Arthur Sugihanjoyo",
                     position: "Lnt Staff",
                     alt: "Richard Arthur Sugihanjoyo - Lnt Staff",
-                    imageSrc: "/our-structure/lnt-2.png",
-                    className: "col-start-2 row-start-2"
+                    imageSrc: "/our-structure/lnt-2.jpg",
+                    className: "col-start-3 row-start-2"
                 },
                 {
                     id: 4,
                     name: "Samuel Benediktus Meliala",
                     position: "Lnt Staff",
                     alt: "Samuel Benediktus Meliala - Lnt Staff",
-                    imageSrc: "/our-structure/lnt-3.png",
-                    className: "col-start-3 row-start-2"
-                },
-                {
-                    id: 5,
-                    name: "Ezra Arya Wijaya",
-                    position: "Lnt Staff",
-                    alt: "Ezra Arya Wijaya - Lnt Staff",
-                    imageSrc: "/our-structure/lnt-4.png",
+                    imageSrc: "/our-structure/lnt-3.jpg",
                     className: "col-start-4 row-start-2"
-                },
-                {
-                    id: 6,
-                    name: "Gregorius Cahyadi",
-                    position: "Lnt Staff",
-                    alt: "Gregorius Cahyadi - Lnt Staff",
-                    imageSrc: "/our-structure/lnt-5.png",
-                    className: "col-start-5 row-start-2"
                 },
             ]
         },
@@ -241,7 +217,7 @@ export class DivisionData {
                     name: "Reynard Hansel",
                     position: "RnD Manager",
                     alt: "Reynard Hansel - RnD Manager",
-                    imageSrc: "/our-structure/rnd.png",
+                    imageSrc: "/our-structure/rnd.jpg",
                     className: "col-start-3 row-start-1"
                 },
                 {
@@ -250,39 +226,7 @@ export class DivisionData {
                     position: "RnD Staff",
                     alt: "Ihsaan Hardyanto - RnD Staff",
                     imageSrc: "/our-structure/rnd-1.png",
-                    className: "col-start-1 row-start-2"
-                },
-                {
-                    id: 3,
-                    name: "Reynaldy Marchell Bagas Adji",
-                    position: "RnD Staff",
-                    alt: "Reynaldy Marchell Bagas Adji - RnD Staff",
-                    imageSrc: "/our-structure/rnd-2.png",
-                    className: "col-start-2 row-start-2"
-                },
-                {
-                    id: 4,
-                    name: "Reynaldo Marchell Bagas Adji",
-                    position: "RnD Staff",
-                    alt: "Reynaldo Marchell Bagas Adji - RnD Staff",
-                    imageSrc: "/our-structure/rnd-3.png",
                     className: "col-start-3 row-start-2"
-                },
-                {
-                    id: 5,
-                    name: "Rakha Naufal Azizi",
-                    position: "RnD Staff",
-                    alt: "Rakha Naufal Azizi - RnD Staff",
-                    imageSrc: "/our-structure/rnd-4.png",
-                    className: "col-start-4 row-start-2"
-                },
-                {
-                    id: 6,
-                    name: "Stanislaus Kanaya Jerry Febriano",
-                    position: "RnD Staff",
-                    alt: "Stanislaus Kanaya Jerry Febriano - RnD Staff",
-                    imageSrc: "/our-structure/rnd-5.png",
-                    className: "col-start-5 row-start-2"
                 },
             ]
         },
@@ -320,7 +264,7 @@ export class DivisionData {
                     name: "Rafael Marvin Sowarahardja",
                     position: "HRD Manager",
                     alt: "Rafael Marvin Sowarahardja - HRD Manager",
-                    imageSrc: "/our-structure/hrd.png",
+                    imageSrc: "/our-structure/hrd.jpg",
                     className: "col-start-3 row-start-1"
                 },
                 {
@@ -328,8 +272,24 @@ export class DivisionData {
                     name: "Vanessa Audreylia",
                     position: "HRD Staff",
                     alt: "Vanessa Audreylia - HRD Staff",
-                    imageSrc: "/our-structure/hrd-1.png",
+                    imageSrc: "/our-structure/hrd-1.jpg",
+                    className: "col-start-2 row-start-2"
+                },
+                {
+                    id: 3,
+                    name: "HRD Staff 2",
+                    position: "HRD Staff",
+                    alt: "HRD Staff 2 - HRD Staff",
+                    imageSrc: "/our-structure/hrd-2.jpg",
                     className: "col-start-3 row-start-2"
+                },
+                {
+                    id: 4,
+                    name: "HRD Staff 3",
+                    position: "HRD Staff",
+                    alt: "HRD Staff 3 - HRD Staff",
+                    imageSrc: "/our-structure/hrd-3.jpg",
+                    className: "col-start-4 row-start-2"
                 },
             ]
         },
@@ -339,7 +299,7 @@ export class DivisionData {
         return [
             {
                 id: 1,
-                imageSrc: "/our-structure/ceo.png",
+                imageSrc: "/our-structure/ceo.jpg",
                 alt: "Mission",
                 className: "col-start-3 row-start-1 ",
                 name: "Theofilus Adhi Septian",
@@ -347,7 +307,7 @@ export class DivisionData {
             },
             {
                 id: 2,
-                imageSrc: "/our-structure/cfo.png",
+                imageSrc: "/our-structure/cfo.jpg",
                 alt: "Mission",
                 className: "col-start-4 row-start-2",
                 name: "Richard Rafelson",
@@ -355,7 +315,7 @@ export class DivisionData {
             },
             {
                 id: 3,
-                imageSrc: "/our-structure/pr.png",
+                imageSrc: "/our-structure/pr.jpg",
                 alt: "Mission",
                 className: "col-start-1 row-start-3",
                 name: "Natasya Felicia",
@@ -363,7 +323,7 @@ export class DivisionData {
             },
             {
                 id: 4,
-                imageSrc: "/our-structure/eeo.png",
+                imageSrc: "/our-structure/eeo.jpg",
                 alt: "Mission",
                 className: "col-start-2 row-start-3",
                 name: "Cynthia Shabrina",
@@ -371,7 +331,7 @@ export class DivisionData {
             },
             {
                 id: 5,
-                imageSrc: "/our-structure/lnt.png",
+                imageSrc: "/our-structure/lnt.jpg",
                 alt: "Mission",
                 className: "col-start-3 row-start-3",
                 name: "Maleo Farrel",
@@ -379,7 +339,7 @@ export class DivisionData {
             },
             {
                 id: 6,
-                imageSrc: "/our-structure/rnd.png",
+                imageSrc: "/our-structure/rnd.jpg",
                 alt: "Mission",
                 className: "col-start-4 row-start-3",
                 name: "Reynard Hansel",
@@ -387,7 +347,7 @@ export class DivisionData {
             },
             {
                 id: 7,
-                imageSrc: "/our-structure/hrd.png",
+                imageSrc: "/our-structure/hrd.jpg",
                 alt: "Mission",
                 className: "col-start-5 row-start-3",
                 name: "Rafael Marvin Sowarahardja",

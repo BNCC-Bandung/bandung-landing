@@ -39,7 +39,7 @@ export const AboutSection: React.FC = () => (
           Contact Us
         </GlowingButton>
       </div>
-      <div className="relative w-[500px]">
+      <div className="relative w-[500px] ml-[67px]">
         <div className="shadow-custom-shadow absolute bottom-[30%] right-10 w-full -rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
           <Image
             src="/about-us/image-1.png"

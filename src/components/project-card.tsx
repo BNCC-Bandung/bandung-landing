@@ -6,7 +6,7 @@ export const ProjectCard: React.FC<{
   year: string;
   description: string;
 }> = ({ imageIndex, title, year, description }) => (
-  <div className="shadow-custom-shadow relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg">
+  <div className="shadow-custom-shadow relative flex flex-col gap-4 rounded-xl bg-white/5 p-6 font-sans text-white backdrop-blur-lg">
     <div className="relative">
       <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#65E0E9] to-[#3E47BE] opacity-75 blur" />
       <div className="relative">
