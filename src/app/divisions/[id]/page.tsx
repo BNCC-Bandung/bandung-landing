@@ -25,41 +25,41 @@ export default async function Home({ params }: { params: { id: string } }) {
 
       <section
         id="about"
-        className="relative top-0 flex min-h-screen w-full justify-center"
+        className="relative top-0 flex h-fit w-full justify-center py-24 lg:min-h-screen"
       >
-        <div className="container grid grid-cols-2 content-center justify-items-center [&>*]:z-10">
-          <div className="flex flex-col gap-5">
+        <div className="mx-auto grid w-10/12 max-w-7xl grid-cols-1 content-center justify-items-center gap-10 lg:grid-cols-2 [&>*]:z-10">
+          <div className="flex w-full flex-col gap-5">
             <div className="flex items-center gap-4">
               <Image
                 src={division.image}
                 alt={division.title}
                 width={500}
                 height={500}
-                className="size-20"
+                className="size-16 md:size-20"
               />
-              <h1 className="text-5xl font-bold text-white">
+              <h1 className="text-3xl font-bold text-white md:text-5xl">
                 <Accent>{division.title.split(" ")[0]}</Accent>
                 <br />
                 {division.title.split(" ").slice(1).join(" ")}
               </h1>
             </div>
 
-            <p className="text-xl font-light">{division.description}</p>
+            <p className="text-base font-light md:text-xl">{division.description}</p>
 
-            <div className="flex gap-5">
-              <GlowingButton disabled className="text-md p-6">
+            <div className="flex flex-wrap gap-3 md:gap-5">
+              <GlowingButton disabled className="text-md p-5 md:p-6">
                 Creativity
               </GlowingButton>
-              <GlowingButton disabled className="text-md p-6">
+              <GlowingButton disabled className="text-md p-5 md:p-6">
                 Communication
               </GlowingButton>
-              <GlowingButton disabled className="text-md p-6">
+              <GlowingButton disabled className="text-md p-5 md:p-6">
                 Social Media
               </GlowingButton>
             </div>
           </div>
 
-          <div className="relative w-[500px]">
+          <div className="relative hidden w-full max-w-[500px] lg:block">
             <div className="shadow-custom-shadow absolute bottom-[40%] right-10 w-full rotate-6 rounded-xl bg-white/15 p-3 backdrop-blur-lg">
               <Image
                 src={division.card_image[0] ?? "/divisions/pr/hero-1.png"}
@@ -94,8 +94,8 @@ export default async function Home({ params }: { params: { id: string } }) {
           height={500}
           className="absolute top-[-200px] z-0 w-full"
         /> */}
-        <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
-          <h1 className="text-5xl font-bold text-white">
+        <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
+          <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Our <Accent>Structure</Accent>
           </h1>
 
@@ -105,14 +105,14 @@ export default async function Home({ params }: { params: { id: string } }) {
 
       <section
         id="our-events"
-        className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
+        className="relative top-0 flex h-fit w-full justify-center pt-[100px] md:pt-[200px]"
       >
-        <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
-          <h1 className="text-5xl font-bold text-white">
+        <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
+          <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             {division.title} <Accent>Events</Accent>
           </h1>
 
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             {division.events.map((event, i) => (
               <div
                 key={i}

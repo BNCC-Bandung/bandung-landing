@@ -1,6 +1,7 @@
 "use client";
 
-import { SiFacebook, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 
 export function Footer() {
@@ -16,7 +17,7 @@ export function Footer() {
               Ciroyom, Kec. Andir, Kota Bandung, Jawa Barat 40181
             </p>
             <p className="text-muted-foreground text-sm">
-              Created with ❤️ by RnD BNCC Bandung.
+              Created with 💙 by RnD BNCC Bandung.
             </p>
           </div>
 
@@ -110,7 +111,7 @@ export function Footer() {
                 <SiYoutube size={20} />
               </Link>
               <Link href="#" className="hover:text-gray-400">
-                <SiLinkedin size={20} />
+                <FaLinkedinIn size={20} />
               </Link>
               <Link href="#" className="hover:text-gray-400">
                 <SiFacebook size={20} />

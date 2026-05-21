@@ -13,7 +13,7 @@ const GridItem = ({ item }: { item: StructureProps }) => (
           alt={item.alt}
           width={200}
           height={150}
-          className="aspect-[2/3] w-full rounded-lg object-cover"
+          className="aspect-square w-full rounded-lg object-cover object-top"
         />
       </div>
     </div>
@@ -28,10 +28,12 @@ const GridItem = ({ item }: { item: StructureProps }) => (
 
 export function OurStructure({ gridItems }: { gridItems: StructureProps[] }) {
   return (
-    <div className="grid grid-cols-5 gap-[4rem_2.5rem]">
+    <div className="w-full overflow-x-auto pb-4">
+    <div className="grid min-w-[900px] grid-cols-5 gap-[4rem_2.5rem]">
       {gridItems.map((item) => (
         <GridItem key={item.id} item={item} />
       ))}
+    </div>
       {/* <div
         className={`shadow-custom-shadow relative col-start-3 row-start-1 flex flex-col gap-4 rounded-xl bg-white/5 p-6 backdrop-blur-lg`}
       >
@@ -43,7 +45,7 @@ export function OurStructure({ gridItems }: { gridItems: StructureProps[] }) {
               alt=""
               width={200}
               height={150}
-              className="aspect-[2/3] w-full rounded-lg object-cover"
+              className="aspect-square w-full rounded-lg object-cover object-top"
             />
           </div>
         </div>
@@ -65,7 +67,7 @@ export function OurStructure({ gridItems }: { gridItems: StructureProps[] }) {
               alt=""
               width={200}
               height={150}
-              className="aspect-[2/3] w-full rounded-lg object-cover"
+              className="aspect-square w-full rounded-lg object-cover object-top"
             />
           </div>
         </div>
@@ -79,3 +81,4 @@ export function OurStructure({ gridItems }: { gridItems: StructureProps[] }) {
     </div>
   );
 }
+

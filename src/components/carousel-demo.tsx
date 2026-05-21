@@ -35,8 +35,8 @@ export function CarouselDemo() {
       <Carousel setApi={setApi} className="w-full">
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="p-10">
-              <div className="shadow-custom-shadow border-muted-foreground/30 rounded-xl border p-10">
+            <CarouselItem key={index} className="p-4 md:p-10">
+              <div className="shadow-custom-shadow border-muted-foreground/30 rounded-xl border p-6 md:p-10">
                 <div className="relative">
                   <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#f3f4ed] to-[#5926b7] opacity-75 blur" />
                   <div className="relative">

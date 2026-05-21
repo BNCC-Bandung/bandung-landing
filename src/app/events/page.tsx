@@ -18,10 +18,10 @@ export default async function Home() {
 
       <section
         id="newest-project"
-        className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
+        className="relative top-0 flex h-fit w-full justify-center pt-[100px] md:pt-[200px]"
       >
-        <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
-          <h1 className="text-5xl font-bold tracking-tight text-white">
+        <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
+          <h1 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
             <Accent>Newest</Accent> Events
           </h1>
 
@@ -31,20 +31,20 @@ export default async function Home() {
 
       <section
         id="discover-project"
-        className="relative top-0 flex h-fit w-full justify-center py-[200px]"
+        className="relative top-0 flex h-fit w-full justify-center py-[100px] md:py-[200px]"
       >
-        <div className="container flex w-full flex-col items-center gap-10 [&>*]:z-10">
-          <h1 className="text-5xl font-bold tracking-tight text-white">
+        <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
+          <h1 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
             Discover <Accent>More</Accent> Events
           </h1>
 
           {/* This is the part that you need to replace */}
           <div className="flex w-full flex-col items-center justify-center gap-10 py-10">
-            <div className="shadow-custom-shadow flex w-2/3 items-center gap-5 rounded-xl bg-white/5 p-4 backdrop-blur-lg">
+            <div className="shadow-custom-shadow flex w-full items-center gap-5 rounded-xl bg-white/5 p-4 backdrop-blur-lg md:w-2/3">
               <SearchIcon />
               <span className="text-white">Search Events</span>
             </div>
-            <div className="flex w-2/3 items-center justify-between gap-5">
+            <div className="flex w-full flex-wrap items-center justify-between gap-3 md:w-2/3 md:gap-5">
               <span>All</span>
               <span>App Design</span>
               <span>UI/UX</span>
@@ -54,7 +54,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 9 }).map((_, i) => (
               <ProjectCard
                 key={i}

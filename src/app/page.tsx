@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <>
       <ParallaxHomepage />
-      <div className="bg-custom-gradient h-fit space-y-28 overflow-hidden">
+      <div className="bg-custom-gradient h-fit space-y-16 overflow-hidden lg:space-y-28">
         <AboutSection />
         <VisionSection />
         <MissionSection />

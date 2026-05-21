@@ -1,6 +1,7 @@
 "use client";
 
-import { SiFacebook, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Title } from "@/components/title";
 import { Accent } from "@/components/accent";
@@ -10,7 +11,7 @@ export default function Home() {
   const socialLinks = [
     { icon: SiInstagram, href: "#", label: "Instagram" },
     { icon: SiYoutube, href: "#", label: "YouTube" },
-    { icon: SiLinkedin, href: "#", label: "LinkedIn" },
+    { icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
     { icon: SiFacebook, href: "#", label: "Facebook" },
   ];
 

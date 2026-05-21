@@ -67,14 +67,16 @@ export function ParallaxHomepage() {
         <motion.div
           className="relative z-10 flex h-full items-center justify-center text-white"
           style={{ scale: textScale, y: textY }}
-          initial={{ opacity: 0, x: 300 }} // Start from below
-          whileInView={{ opacity: 1, x: 0 }} // Slide to original position
+          initial={{ opacity: 0, x: 300 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: "circOut" }}
         >
-          <Title className="stroke-black text-7xl">
-            Bina Nusantara <br />
-            Computer Club
-          </Title>
+          <div className="w-10/12 max-w-7xl">
+            <Title className="stroke-black text-4xl md:text-6xl lg:text-7xl">
+              Bina Nusantara <br />
+              Computer Club
+            </Title>
+          </div>
         </motion.div>
       </div>
 
@@ -104,11 +106,11 @@ export function ParallaxHomepage() {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="text-center"
         >
-          <Title className="text-foreground text-center text-6xl leading-[1.4]">
+          <Title className="text-foreground text-center text-3xl leading-[1.4] md:text-5xl lg:text-6xl">
             Where Technology <br />
             Placed in <Accent>Kota Kembang</Accent>
           </Title>
-          <span className="text-4xl font-light">#VIVABNCC</span>
+          <span className="text-2xl font-light md:text-4xl">#VIVABNCC</span>
         </motion.div>
       </div>
 
@@ -119,7 +121,7 @@ export function ParallaxHomepage() {
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <Title>
-            <Accent className="text-8xl">About Us</Accent>
+            <Accent className="text-5xl md:text-7xl lg:text-8xl">About Us</Accent>
           </Title>
         </motion.div>
       </div>

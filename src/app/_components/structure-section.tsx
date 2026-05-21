@@ -16,7 +16,7 @@ export const StructureSection: React.FC = () => (
       height={500}
       className="absolute top-[-200px] z-0 w-full"
     />
-    <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
+    <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
       <SectionTitle>
         Our <Accent>Structure</Accent>
       </SectionTitle>

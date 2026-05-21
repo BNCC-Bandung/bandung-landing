@@ -44,3 +44,8 @@ yarn-error.log*
 
 # idea files
 .idea
+
+# vibe code / AI tooling
+CLAUDE.md
+.claude/
+.playwright-mcp/

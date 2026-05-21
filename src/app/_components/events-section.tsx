@@ -16,11 +16,11 @@ export const EventsSection: React.FC = () => (
       height={500}
       className="absolute top-[-400px] z-0 w-full"
     />
-    <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
+    <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
       <SectionTitle>
         Our <Accent>Events</Accent>
       </SectionTitle>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
         {Array.from({ length: 3 }).map((_, i) => (
           <ProjectCard
             key={i}

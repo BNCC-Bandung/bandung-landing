@@ -8,11 +8,11 @@ export const ProjectsSection: React.FC = () => (
     id="our-projects"
     className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
   >
-    <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
+    <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
       <SectionTitle>
         Our <Accent>Projects</Accent>
       </SectionTitle>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
         {Array.from({ length: 6 }).map((_, i) => (
           <ProjectCard
             key={i}
