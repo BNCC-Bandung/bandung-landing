@@ -1,9 +1,14 @@
 import "@/styles/globals.css";
 
-import { Montserrat } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import { type Metadata } from "next";
 
-const fonts = Montserrat({
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
@@ -22,13 +27,18 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${fonts.className} scroll-smooth`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`dark ${montserrat.className} ${inter.variable} scroll-smooth`}
+    >
       <body>
         <TRPCReactProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
-            enableSystem
+            enableSystem={false}
+            forcedTheme="dark"
             disableTransitionOnChange
           >
             <NavBar />

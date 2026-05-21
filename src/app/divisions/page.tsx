@@ -40,7 +40,7 @@ export function DivisionSelection({ text = "See Our" }: { text?: string }) {
       id="our-divisions"
       className="relative top-0 flex h-fit w-full justify-center pt-[200px]"
     >
-      <div className="container flex flex-col items-center gap-10 [&>*]:z-10">
+      <div className="mx-auto flex w-10/12 max-w-7xl flex-col items-center gap-10 [&>*]:z-10">
         <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
           {text} <Accent>Divisions</Accent>
         </h1>
@@ -54,7 +54,7 @@ export function DivisionSelection({ text = "See Our" }: { text?: string }) {
                 key={i}
                 href={`/divisions/${div_name[i]?.toLocaleLowerCase()}`}
               >
-                <div className="shadow-custom-shadow flex cursor-pointer flex-col items-center rounded-2xl bg-white/15 p-6 backdrop-blur-lg transition-transform hover:scale-[1.03] active:scale-[0.97] md:p-10">
+                <div className="shadow-custom-shadow flex cursor-pointer flex-col items-center rounded-2xl bg-white/15 p-6 font-sans text-white backdrop-blur-lg transition-transform hover:scale-[1.03] active:scale-[0.97] md:p-10">
                   <Image
                     src={`/our-divisions/${i + 1}.svg`}
                     alt="Division"

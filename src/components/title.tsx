@@ -15,7 +15,7 @@ export const Title = React.forwardRef<
   }
 >(({ children, className }, ref) => {
   return (
-    <h1 ref={ref} className={cn(`${font.className} ${className}`)}>
+    <h1 ref={ref} className={cn(font.className, className)}>
       {children}
     </h1>
   );

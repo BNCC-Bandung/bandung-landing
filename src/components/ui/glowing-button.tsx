@@ -7,11 +7,13 @@ export function GlowingButton({
   href,
   className,
   disabled = false,
+  onClick,
 }: {
   children: React.ReactNode;
   href?: string;
   className?: string;
   disabled?: boolean;
+  onClick?: () => void;
 }) {
   const classes = cn(
     "group relative inline-flex w-fit ${className}",
@@ -22,7 +24,9 @@ export function GlowingButton({
   return (
     <div className="group relative inline-flex w-fit">
       {disabled ? (
-        <Button className={classes}>{children}</Button>
+        <Button className={classes} onClick={onClick}>
+          {children}
+        </Button>
       ) : (
         <Link className="z-20 w-full" href={href ?? "#"}>
           <Button className={classes}>{children}</Button>
